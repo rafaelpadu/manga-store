@@ -1,4 +1,3 @@
-import {TuiAlertModule, TuiDialogModule, TuiRootModule} from "@taiga-ui/core";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
@@ -8,6 +7,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { HeaderComponent } from './core/components/header/header.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,9 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    TuiRootModule,
-    TuiDialogModule,
-    TuiAlertModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
